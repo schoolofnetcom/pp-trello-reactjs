@@ -1,15 +1,17 @@
-$(document).ready(function() {
-	$(document).on('click', 'a[href^="#"]', function(e) {
-		var id = $(this).attr('href')
+'use strict';
 
-		var target = $(id)
+$(document).ready(function () {
+		$(document).on('click', 'a[href^="#"]', function (e) {
+				var id = $(this).attr('href');
 
-		if (target.length === 0) {
-			return;
-		}
+				var target = $(id);
 
-		e.preventDefault()
+				if (target.length === 0) {
+						return;
+				}
 
-		$('body, html').animate({ scrollTop: target.offset().top })
-	})
-})
+				e.preventDefault();
+
+				$('body, html').animate({ scrollTop: target.offset().top });
+		});
+});
