@@ -1,0 +1,27 @@
+ul, li {
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.form-control, .form-control[readonly] {
+	border: none;
+	background: #F5F5F5;
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn-delete {
+	padding: 6px 10px;
+}
+
+.action-create {
+	margin: 1em 0 2em 0;
+}
